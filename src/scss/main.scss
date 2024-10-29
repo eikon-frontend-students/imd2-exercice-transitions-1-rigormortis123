@@ -59,3 +59,139 @@ video {
 // ---------------------------------------------
 // Votre code ici :
 // ---------------------------------------------
+
+/* 01 */
+
+.wrapper-hover .item:hover {
+  background: var(--pink);
+}
+
+/* 02 */
+
+.wrapper-transition .item {
+  transition: all 500ms;
+}
+
+.wrapper-transition .item:hover {
+  background: var(--pink);
+}
+
+/* 03 */
+
+.wrapper-delay .item {
+  transition: all 500ms 500ms;
+}
+.wrapper-delay .item:hover {
+  background: var(--pink);
+}
+
+/* 04 */
+
+.wrapper-two-properties .item {
+  transition: all 500ms;
+}
+
+.wrapper-two-properties .item:hover {
+  background: var(--pink);
+  color: black;
+}
+
+/* 05 */
+
+.wrapper-delay-one-property .item {
+  transition: background 500ms, color 500ms 500ms;
+}
+
+.wrapper-delay-one-property .item:hover {
+  background: var(--pink);
+  color: black;
+}
+
+/* 06 */
+
+.wrapper-parent:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent .item {
+  transition: all 500ms;
+}
+
+/* 07 */
+
+.wrapper-parent-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-delay .item:nth-child(1) {
+  transition: all 500ms;
+}
+
+.wrapper-parent-delay .item:nth-child(2) {
+  transition: all 500ms 500ms;
+}
+
+.wrapper-parent-delay .item:nth-child(3) {
+  transition: all 500ms 1000ms;
+}
+
+/* 08 */
+
+.wrapper-parent-children,
+.wrapper-parent-children .item {
+  transition: all 500ms;
+}
+
+.wrapper-parent-children:hover {
+  background: var(--blue);
+}
+.wrapper-parent-children:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children-delay {
+  transition: all 500ms;
+}
+
+/* 09 */
+
+.wrapper-parent-children-delay .item {
+  transition: all 500ms 500ms;
+}
+
+.wrapper-parent-children-delay:hover {
+  background: var(--blue);
+}
+.wrapper-parent-children-delay:hover .item {
+  background: var(--pink);
+}
+
+/* 10 */
+
+.wrapper-translate .item {
+  transition: all 500ms;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(30px);
+}
+
+/* 11 */
+
+.wrapper-rotate .item {
+  transition: all 500ms;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+
+/* 12 */
+
+.wrapper-scale .item {
+  transition: all 500ms;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.3);
+}
